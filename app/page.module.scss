@@ -1,0 +1,10 @@
+@import "./styles/variables.module.scss";
+@import "./styles/mixins.module.scss";
+
+.container {
+  @include flex(flex-start, column, center, 40px);
+
+  width: 100%;
+  min-height: 100vh;
+  background-color: $main-bg;
+}

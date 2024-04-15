@@ -1,0 +1,9 @@
+@import "../../../styles/variables.module.scss";
+
+.container {
+  width: 20%;
+  height: 40vh;
+  background-color: $card-bg;
+  border-radius: $b-radius;
+  padding: $padding;
+}

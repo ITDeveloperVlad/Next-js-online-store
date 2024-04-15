@@ -1,0 +1,7 @@
+@import "../../styles/mixins.module.scss";
+
+.container {
+  @include flex(center, row, center, 20px);
+
+  flex-wrap: wrap;
+}

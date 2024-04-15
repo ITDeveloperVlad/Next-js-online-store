@@ -1,0 +1,19 @@
+@import "../../styles/variables.module.scss";
+@import "../../styles/mixins.module.scss";
+
+.container {
+  @include flex(flex-start, column, flex-start, 20px);
+
+  width: 25%;
+  background-color: $card-bg;
+  border-radius: $b-radius;
+  padding: $padding;
+
+  .btnsBlock {
+    @include flex(center, row, center, 10px);
+
+    width: 100%;
+
+    flex-wrap: nowrap;
+  }
+}

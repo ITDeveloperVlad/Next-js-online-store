@@ -1,0 +1,60 @@
+@import "../../../styles/variables.module.scss";
+@import "../../../styles/mixins.module.scss";
+
+$card-height: 700px;
+$img-height: 400px;
+
+.container {
+  @include flex(space-between, column);
+
+  background-color: $card-bg;
+  border-radius: $b-radius;
+  padding: $padding;
+  height: $card-height;
+  max-height: $card-height;
+
+  .titleBlock {
+    @include flex(flex-start, column, center, 10px);
+
+    width: 100%;
+
+    .img {
+      @include flex;
+      border-radius: $b-radius;
+      width: 100%;
+      height: $img-height;
+      overflow: hidden;
+    }
+
+    .content {
+      @include flex(flex-start, column, center, 10px);
+
+      height: 150px;
+      width: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      .title {
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+      }
+
+      .dsc {
+        width: 100%;
+        word-wrap: break-word;
+      }
+    }
+  }
+
+  .footer {
+    @include flex(space-between, column, center, 10px);
+
+    width: 100%;
+
+    .price {
+      font-size: 30px;
+      font-weight: 400;
+    }
+  }
+}

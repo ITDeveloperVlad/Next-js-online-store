@@ -1,0 +1,14 @@
+@import "../../styles/variables.module.scss";
+
+.block {
+  background-color: #777777;
+  width: 80%;
+  margin-top: 40px;
+  border-radius: $b-radius;
+
+  & > h1 {
+    font-size: 96px;
+    line-height: 116.18px;
+    text-align: center;
+  }
+}
